@@ -5,7 +5,7 @@ function crearTarjetasProductosInicio(productos){
         const nuevaRopa = document.createElement("div");
         nuevaRopa.classList = "tarjeta-producto";
         nuevaRopa.innerHTML = `
-            <img src="./src/public/img/${producto.id}.png">
+            <img src="${producto.urlImagen}">
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
             <button>Agregar al carrito</button>
@@ -15,5 +15,6 @@ function crearTarjetasProductosInicio(productos){
     });
 }
 
-
-crearTarjetasProductosInicio(ropa);
+getRopa().then(ropa => {
+    crearTarjetasProductosInicio(ropa);
+})
