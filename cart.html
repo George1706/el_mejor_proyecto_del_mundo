@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="./js/ropa.js"></script>
+    <script src="./js/cartService.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./src/public/img/image.png" id="logo" alt="Logo"></a>
+            <div>
+            <a href="#">MTB</a>
+            <a href="#">Sitio</a>
+            <a href="./cart.html" id="cart"><img src="./src/public/img/carrito.jpg" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">Ups! No hay productos en el carrito. <a href="./index.html">Agrega algunos</a></p>
+        <section id="productos-container"></section>
+        <section id="totales">
+            <p>Total unidades: <span id="unidades">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar Carrito</button>
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, veniam! <a href="https://www.youtube.com/watch?v=lduIpYA66mM"></a></p>
+        <p>¿Que como lo hice? entra aca: <a href="https://www.youtube.com/watch?v=lduIpYA66mM"></a></p>
+    </footer>
+
+</body>
+</html>
